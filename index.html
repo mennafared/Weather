@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
+    <link rel="shortcut icon" href="./images/logo@2x.png" type="image/x-icon">
+
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/all.min.css">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+
+<body>
+  <nav class="navbar navbar-expand-lg p-4">
+    <div class="container-fluid mx-5 px-5 py-2">
+      <a class="navbar-brand d-flex" class="" href="#">
+        <img src="./images/logo@2x.png" class="logo" alt="">
+        <div class="ms-2">
+          <h1 class="site-title text-white m-0">Weather</h1>
+          <h6 class="site-description">tagline goes here</h6>
+        </div>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mb-2 mb-lg-0">
+          <li class="nav-item  mx-2">
+            <a class="home-link px-4 py-1  nav-link fw-medium " aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item  mx-2">
+            <a class="nav-link  px-4 py-1 fw-medium text-white" aria-current="page" href="#">News</a>
+          </li>
+          <li class="nav-item  mx-2">
+            <a class="nav-link  px-4 py-1 fw-medium text-white" aria-current="page" href="#">Live cameras</a>
+          </li>
+          <li class="nav-item  mx-2">
+            <a class="nav-link  px-4 py-1 fw-medium text-white" aria-current="page" href="#">Photos</a>
+          </li>
+          <li class="nav-item  mx-2">
+            <a class="nav-link  px-4 py-1 fw-medium text-white" aria-current="page" href="#">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <main>
+    <div class="hero py-5">
+      <div class="container">
+        <form class="find-location position-relative">
+          <input type="text" placeholder="Find your location..." id="search">
+          <button id="submit" class="position-absolute border-0 text-white px-5">Find</button>
+        </form>
+      </div>
+      <div class="forecast-table mt-5">
+        <div class="container pt-3">
+          <div class="forecast-container d-flex justify-content-between overflow-hidden rounded-3" id="forecast">
+            <!-- <div class="today forecast col-lg-4 ">
+              <div class="forecast-header text-center p-2 fw-normal d-flex justify-content-between" id="today">
+                <div class="day">Monday</div>
+                <div class=" date">15April</div>
+              </div>
+              <div class="forecast-content px-4 py-5" id="current">
+                <div class="location fw-normal fs-5">Cairo</div>
+                <div class="degree d-flex justify-content-between">
+                  <div class="num text-white fw-bold">29<sup>o</sup>C</div>
+                  <div class="forecast-icon mt-4 pt-2">
+                    <img src="./images/113.png" alt="" width="90">
+                  </div>
+                </div>
+                <div class="custom mb-4 fw-normal">Sunny</div>
+                <span><img class="me-1" src="./images/icon-umberella.png" alt="">20%</span>
+                <span class="mx-3"><img class="me-1"  src="./images/icon-wind.png" alt="">18km/h</span>
+                <span><img class="me-1" src="./images/icon-compass.png" alt="">East</span>
+              </div>
+            </div> -->
+  
+            <!-- <div class="forcast-m col-lg-4 text-center">
+              <div class="forecast-header fw-normal p-2">
+                <div class="day">Tuesday</div>
+              </div>
+              <div class="forecast-content p-5">
+                <div class="forecast-icon">
+                  <img src="https://cdn.weatherapi.com/weather/64x64/day/116.png" alt="" width="48">
+                </div>
+                <div class="degree text-white fs-3 fw-medium mt-3">32<sup>o</sup>C</div>
+                <div class="fw-normal fs-5">18.7<sup>o</sup></div>
+                <div class="custom fw-normal mt-3">Partly Cloudy</div>
+              </div>
+            </div> -->
+  
+            <!-- <div class="forcast col-lg-4 text-center">
+              <div class="forecast-header fw-normal p-2">
+                <div class="day">Tuesday</div>
+              </div>
+              <div class="forecast-content p-5">
+                <div class="forecast-icon">
+                  <img src="https://cdn.weatherapi.com/weather/64x64/day/116.png" alt="" width="48">
+                </div>
+                <div class="degree text-white fs-3 fw-medium mt-3">32<sup>o</sup>C</div>
+                <div class="fw-normal fs-5">18.7<sup>o</sup></div>
+                <div class="custom fw-normal mt-3">Partly Cloudy</div>
+              </div>
+            </div> -->
+          </div>
+        </div>
+  
+      </div>
+
+    </div>
+    
+    
+      
+    
+  </main>
+
+  <footer class="p-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8">
+          <form action="#" class="position-relative me-2">
+            <input type="text" placeholder="Enter your email to subscribe...">
+            <button type="submit" class="position-absolute border-0 text-white px-4">Subscribe</button>
+          </form>
+        </div>
+        <div class="col-md-3 col-md-offset-1 mt-2 ms-3">
+          <div class="social-links">
+            <a href="#" class="mx-2"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" class="mx-2"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#" class="mx-2"><i class="fa-brands fa-google-plus-g"></i></a>
+            <a href="#" class="mx-2"><i class="fa-brands fa-pinterest-p"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <p class="colophon mt-4 fw-normal">Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+
+    </div>
+  </footer>
+
+
+  <script src="./js/bootstrap.bundle.min.js"></script>
+  <script src="./js/index.js"></script>
+</body>
+
+
+</html>

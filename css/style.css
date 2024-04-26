@@ -1,0 +1,105 @@
+body {
+  color: #bfc1c8;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.5;
+  background: #1e202b;
+}
+
+.logo {
+  width: 64px;
+  height: 38px;
+}
+
+.site-title {
+  font-size: 1em;
+}
+
+.site-description {
+  font-size: 0.6em;
+  display: block;
+  color: #bfc1c8;
+}
+
+.navbar-collapse {
+  flex-grow: 0;
+}
+
+.home-link,
+.nav-link:hover {
+  border: 2px solid #009ad8 !important;
+  color: #009ad8 !important;
+  border-radius: 20px;
+}
+
+.hero {
+  background-image: url("../images/banner.png");
+  background-repeat: no-repeat;
+}
+
+.forecast-container {
+  background: #323544;
+}
+
+.forecast-header,
+.forecast,
+.forecast-header {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.forecast-content .degree .num {
+  font-size: 6rem;
+}
+
+.custom {
+  color: #009ad8;
+}
+
+footer,
+.forcast:nth-child(even){
+  background: #262936;
+}
+
+.social-links a {
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  border-radius: 50%;
+  background: #1e202b;
+  color: #009ad8;
+  text-align: center;
+  line-height: 2;
+  transition: 0.3s ease;
+  font-size: 20px;
+}
+
+.social-links a:hover {
+  background: #009ad8;
+  color: white;
+}
+
+form input {
+  padding: 20px;
+  background: #1e202b;
+  width: 100%;
+  color: white;
+  outline: none;
+  border: none;
+  border-radius: 30px;
+}
+
+form button {
+  right: 5px;
+  top: 5px;
+  bottom: 5px;
+  border-radius: 30px;
+  background-color: #009ad8;
+}
+
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
